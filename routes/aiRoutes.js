@@ -11,8 +11,8 @@ const prompts = require('../prompts');
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
-//const openApiKey = process.env.API_KEY_OPEN; // Asegúrate de que esto esté correcto
-//console.log('Clave API utilizada:', openApiKey); // Agrega este log
+const openApiKey = process.env.API_KEY_OPEN; // Asegúrate de que esto esté correcto
+console.log('Clave API utilizada:', openApiKey); // Agrega este log
 const openaiApiUrl = 'https://api.openai.com/v1/chat/completions';
 const openaiApiUrl_i = 'https://api.openai.com/v1/images/';
 
